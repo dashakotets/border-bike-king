@@ -65,13 +65,17 @@ body{
     right: 0;
 }
 
+.logo-img{
+    height: 75px;
+}
+
 
 .header-inner {
     padding-top: 40px;
     padding-bottom: 45px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .menu-list {
     display: flex;
@@ -177,10 +181,27 @@ body{
 
 /* ------------------------------------- */
 
+
+
+/* ------------------about------------------- */
+
+.about{
+    padding: 150px 0;
+}
+
+.about-text{
+    max-width: 750px;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------- */
 /* ---------------why-lease---------------------- */
 
 .why-lease {
-    padding: 150px 0;
+    padding-bottom: 150px;
 }
 
 .why-lease-list {
@@ -470,10 +491,19 @@ color: #0066FF;
 }
 .tabs-content {
 }
+
+.tabs-content-title{
+    margin: 0 auto 40px;
+}
 .tabs-content-item {
     display: none;
+    
+}
+
+.tabs-content-item-wrap{
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 100px 40px;
+        gap: 100px 40px;
 }
 
 .tabs-content-item.tabs-content-item--active{
@@ -484,6 +514,11 @@ color: #0066FF;
 }
 .card-img {
     display: block;
+    width: 270px;
+    height: 170px;
+    object-fit: cover;
+    object-position: bottom;
+    
 }
 
 .card-content{
