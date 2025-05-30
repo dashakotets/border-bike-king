@@ -226,60 +226,75 @@ body{
 
 /* ------------------------------------- */
 
-/* ---------------how-does---------------------- */
+/* ---------------hire-info---------------------- */
 
 
-.how-does {
-    padding-bottom: 150px;
+.hire-info {
+    padding-top: 100px;
 }
 
 .inner {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.how-does-text {
-}
-.how-does-title {
+
+.hire-title {
     font-size: 24px;
     font-weight: 700;
     margin-top: 50px;
 }
-.how-does-list {
-    padding: 50px 0 70px;
-    counter-reset: myCounter;
+.hire-info-list {
+    padding: 30px 0;
+
 }
 
-.how-does-item {
+.hire-info-item {
     list-style-type: none;
-    width: 270px;
-    position: relative;
-    margin-left: auto;
     box-sizing: content-box;
-    padding: 19px 0 19px 240px;
-    min-height: 63px;
-}
-.how-does-item +.how-does-item{
-    margin-top: 40px;
+    padding: 10px 0 ;
 }
 
-.how-does-item::before{
-    counter-increment: myCounter;
-    content: counter(myCounter);
+.colour-inner {
+    background-color: #a9a9f3;
+    margin: 0 auto;
+    padding: 30px 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0066FF;
-    font-size: 48px;
-    font-weight: 700;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 0;
+    gap: 20px;
+
 }
+
+
+.inner-title, .weather-title {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.contact-link{
+    text-decoration: underline;
+}
+
+.contact-link:hover{
+    color: #a9a9f3;
+}
+
+.hire-photo{
+    background-image: url(../images/hire.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.hire-photo-title{
+    text-align: center;
+    padding: 150px;
+    color: #fff;
+}
+
+
 
 /* ------------------------------------- */
 
@@ -411,49 +426,92 @@ body{
 }
 
 /* ------------------------------------- */
-/* -------------------------blog------------ */
-.blog {
-padding-bottom: 150px;    
+/* -------------------------service------------ */
+
+.service {
+    padding: 100px 0;
 }
 
-.blog-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-bottom: 70px;
-}
-.blog-item {
+.container {}
+
+.section-title {}
+
+.about-text {}
+
+.experience-title {}
+
+.experience {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.blog-item-img {
-    margin-bottom: 30px;
-    width: 100%;
-}
-.blog-item-title {
-    flex-basis: 446px;
-    font-size: 24px;
-    font-weight: 700;
-}
-.blog-item-link {
-    color: white;
-    background-color: #0066FF;
-    padding: 4px 20px;
-
+    gap: 40px;
+    padding: 50px 0;
 }
 
-.showmore-link{
-    text-transform: uppercase;
-    background-color: #151515;
-    padding: 13px;
-    color: white;
-    width: 225px;
+.experience-text {
+    font-size: 18px;
+}
+
+.common-service-title {}
+
+.common-service {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.service-card {
+    border: 1px solid #0066FF;
+    padding: 15px;
+}
+
+.service-card-title, .service-card-text {
+    margin-bottom: 10px;
+}
+
+
+.service-card-price {
+    align-self: self-end;
+}
+
+
+.testimonial-container {
+    background: #f9f9f9;
     margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+}
+.testimonial-content blockquote {
+    font-size:20px;
+    font-style: italic;
+    color: #333;
+    border-left: 5px solid #0066FF;
+    padding-left: 20px;
+}
+
+
+.testimonial-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.service-contact {
+
+    padding: 50px 0;
     text-align: center;
-    display: block;
+}
+.service-contact-title {
+    margin-bottom: 10px;
 
 }
+.service-contact-text {  
+max-width: 500px;
+margin: 0 auto;
+font-size: 17px;
+ }
 
 
 /* ------------------------------------- */
