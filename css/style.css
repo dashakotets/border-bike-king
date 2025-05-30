@@ -200,27 +200,27 @@ body{
 /* ------------------------------------- */
 /* ---------------why-lease---------------------- */
 
-.why-lease {
+.why-choose {
     padding-bottom: 150px;
 }
 
-.why-lease-list {
+.why-choose-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     text-align: center;
 }
-.why-lease-item {
+.why-choose-item {
 }
-.why-lease-item-img {
+.why-choose-item-img {
     margin-bottom: 30px;
 }
-.why-lease-title {
+.why-choose-title {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
 }
-.why-lease-text {
+.why-choose-text {
     text-align: left;
 }
 
@@ -320,40 +320,9 @@ body{
 }
 
 
-/* ------------------------------------- */
-
-
-/* ----------important--------------------------- */
-
-.important {
-    padding-bottom: 150px;
-}
-.important-title {
-    margin-bottom: 20px;
-}
-.important-text {
-    margin: 0 auto 50px;
-    max-width: 580px;
-}
-.important-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.important-item {
-
-}
-.important-item-img {
-    margin-bottom: 20px;
-}
-.important-item-text {
-}
 
 /* ------------------------------------- */
-/* ------------------------------------- */
 
-
-
-/* ------------------------------------- */
 /* ----------------CONTACTS PAGE--------------------- */
 
 /* --------------contacts----------------------- */
@@ -432,13 +401,6 @@ body{
     padding: 100px 0;
 }
 
-.container {}
-
-.section-title {}
-
-.about-text {}
-
-.experience-title {}
 
 .experience {
     display: flex;
@@ -471,6 +433,10 @@ body{
 
 .service-card-price {
     align-self: self-end;
+}
+
+.testimonial-title{
+    padding-bottom: 50px;
 }
 
 
@@ -517,10 +483,10 @@ font-size: 17px;
 /* ------------------------------------- */
 
 
-/* ----------------choose--------------------- */
+/* ----------------bike-sell--------------------- */
 
 
-.choose {
+.bike-sell {
     padding: 100px 0 150px;
 
 }
@@ -561,54 +527,22 @@ color: #0066FF;
 .tabs-content-item-wrap{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-        gap: 100px 40px;
+    gap: 100px 40px;
 }
 
 .tabs-content-item.tabs-content-item--active{
     display: grid;
 }
-.car-card {
-    text-align: center;
-}
+
 .card-img {
     display: block;
     width: 270px;
     height: 170px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
     
 }
 
-.card-content{
-    padding: 0 5px;
-    border: 1px solid #0066FF;
-    border-top: 0;
-}
-.card-title   {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: 700;
-
-}
-
-.card-price{
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 700;
-}
-.card-text {
-
-    margin-bottom: 20px;
-
-}
-.card-link {
-    display: block;
-    color: #0066FF;
-    border: 1px solid #0066FF;
-    border-top: 0;
-
-}
 
 
 
@@ -663,14 +597,6 @@ color: #0066FF;
 
 /* -----------------adaptive--------------------- */
 
-@media (max-width: 1180px){
-    .important-list{
-        gap: 30px 20px;
-    }
-    .important-item-img{
-        width: 100%;
-    }
-}
 
 @media (max-width: 1040px){
     .video-content{
@@ -680,13 +606,9 @@ color: #0066FF;
 
 
 @media (max-width: 860px){
-    .why-lease-list{
+    .why-choose-list{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-    }
-
-    .important-list{
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .menu-btn{
@@ -716,14 +638,19 @@ color: #0066FF;
     .menu-list.menu-list--active{
         transform: translateY(0%);
     }
+
+    .colour-inner{
+        flex-wrap: wrap;
+        padding: 30px 80px;
+    }
+
+    .tabs-content-item-wrap{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .footer-menu{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
+
 
     .video-content{
         height: 400px;
@@ -743,4 +670,95 @@ color: #0066FF;
     .swiper-pagination-bullet{
         width: 60px;
     }
+
+    .experience{
+        flex-wrap: wrap;
+    }
+
+    .common-service{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+    .tabs-content-item-wrap{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+
+    .tabs-btn-item {
+        font-size: 18px;
+    }
+
+
+    .contacts, .service, .bike-sell {
+        padding: 50px 0;
+    }
+
+    .form-input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contacts-text{
+        padding: 0;
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 540px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .top-link {
+        font-size: 24px;
+        max-width: 310px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 35px;
+    }
+
+    .why-choose-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why-choose {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+
+    .video-content {
+        height: 200px;
+    }
+
+
+    .video {
+        padding-bottom: 50px;
+    }
+
+    .tabs-btn {
+        flex-direction: column;
+    }
+
+    .tabs-content-item {
+        gap: 40px;
+    }
+
+    .common-service{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
 }
