@@ -198,7 +198,7 @@ body{
 }
 
 /* ------------------------------------- */
-/* ---------------why-lease---------------------- */
+/* ---------------why-choose---------------------- */
 
 .why-choose {
     padding-bottom: 150px;
@@ -412,7 +412,6 @@ body{
     font-size: 18px;
 }
 
-.common-service-title {}
 
 .common-service {
     padding: 50px 0;
@@ -512,8 +511,6 @@ font-size: 17px;
 
 .tabs-btn-item--active{
 color: #0066FF;
-}
-.tabs-content {
 }
 
 .tabs-content-title{
@@ -706,6 +703,9 @@ color: #0066FF;
         padding: 0;
         font-size: 20px;
     }
+
+        .tabs {
+            margin-bottom: 30px;   }
 
 }
 
